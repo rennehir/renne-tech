@@ -5,9 +5,6 @@ const PLASMIC_PUBLIC_API_TOKEN =
   process.env.NEXT_PUBLIC_PLASMIC_PUBLIC_API_TOKEN;
 
 if (!PLASMIC_PROJECT_ID || !PLASMIC_PUBLIC_API_TOKEN) {
-  console.log(
-    JSON.stringify({ PLASMIC_PROJECT_ID, PLASMIC_PUBLIC_API_TOKEN }, null, 2)
-  );
   throw new Error(
     "PLASMIC_PROJECT_ID and PLASMIC_PUBLIC_API_TOKEN must be set in the environment"
   );
